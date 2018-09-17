@@ -1,0 +1,19 @@
+body {
+  color: white;
+}
+
+#game-field {
+  display: flex;
+  font-size: 4rem;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-status-field {
+  font-size: 1.2rem;
+}
+
+#lives-field {
+  font-size: 1.2rem;
+}
