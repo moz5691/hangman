@@ -87,6 +87,7 @@ Hangman.prototype.displayStatus = function() {
 const gameId = document.getElementById('game-field');
 const livesId = document.getElementById('lives-field');
 const gameStatusId = document.getElementById('game-status-field');
+const reloadBtn = document.getElementById('reload-btn');
 
 // Randomizer for choosing word.
 const chosenWord = function() {
@@ -112,3 +113,7 @@ const gameMain = function(e) {
 };
 
 window.addEventListener('keydown', gameMain);
+reloadBtn.addEventListener('click', function() {
+  console.log('reload clicked');
+  window.location.reload(true);
+});
